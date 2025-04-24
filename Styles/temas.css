@@ -1,0 +1,107 @@
+/* Tema Padrão (Página Inicial) */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Página História */
+body.historia {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/9/9c/Brasilia_-_Plan.JPG') no-repeat center center fixed;
+    background-size: cover;
+    color: #FDF6EC;
+}
+
+.historia h1, .historia h2 {
+    color: #FFD580;
+}
+
+.verso-historia {
+    position: relative;
+    max-width: 800px;
+    margin: 100px auto 50px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.4em;
+    line-height: 1.6;
+    color: #FFD580;
+    font-style: italic;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Página Pontos Turísticos */
+body.pontos .banner {
+    position: relative;
+    background: url('https://embratur.com.br/wp-content/uploads/2024/08/Brasilia-DF-Monumentos-Catedral-e-Esplanada-20240330-DJI_20240330205045_0033_D-foto-Sebrae-Embratur.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+
+body.pontos .banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.5));
+    z-index: 1;
+}
+
+body.pontos .banner h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 3.5em;
+    margin: 0;
+    padding: 20px 0;
+    color: #FFFFFF;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.9);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+body.pontos .conteudo {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    color: #222;
+}
+
+body.pontos .conteudo h2 {
+    font-size: 2.5em;
+    color: #111;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body.pontos .conteudo p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #333;
+}
+
+body.pontos .ponto {
+    margin-bottom: 50px;
+}
+
+body.pontos .ponto h3 {
+    font-size: 2em;
+    color: #003366;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body.pontos .ponto p {
+    font-size: 1.05em;
+    color: #333;
+}
+
+body.pontos .ponto img {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
